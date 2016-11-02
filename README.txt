@@ -1,6 +1,6 @@
-# EquationGA
+# EquationGeneticAlgorithm
 
-EquationGA is a project that aims to use a genetic algorithm to generate an analytical equation for data. This is still very much a work in progress. First, a set of equations, each with many terms, are generated at random. Next, the genetic algorithm runs and the equations that best fit the data are selected for. Through crossover and mutation the top performing equations produce offspring that are a combination of the terms in these equations, with increased genetic diversity. This continues for a number of iterations, resulting in an optimized equation which can be used for extrapolation or interpolation.
+EquationGeneticAlgorithm is a project that aims to use a genetic algorithm to generate an analytical equation for data. This is still very much a work in progress. First, a set of equations, each with many terms, are generated at random. Next, the genetic algorithm runs and the equations that best fit the data are selected for. Through crossover and mutation the top performing equations produce offspring that are a combination of the terms in these equations, with increased genetic diversity. This continues for a number of iterations, resulting in an optimized equation which can be used for extrapolation or interpolation.
 
 
 Right now data is parsed from MLB games and NFL games, to use while testing. The data comes from http://www.pro-football-reference.com and http://www.baseball-reference.com/. 
