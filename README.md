@@ -28,8 +28,8 @@ src/equationga/Variable.java -class for variables
 
 ## Testing
 
-To execute an example run, simply run the jar file dist/EquationGA.jar like normal:
-java -jar EquationGA.jar
+To execute an example run, run the jar file dist/EquationGA.jar from the root directory:
+java -jar dist/EquationGA.jar
 
 To play with different setting and parameters you can start in EquationGA.java.
 
