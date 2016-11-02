@@ -1,0 +1,61 @@
+-better define mutation inversion and crossover to prevent local min convergance
+-handle variables better so we don't get all varibales, or all constants
+--maybe artificially make it more likely to have one if it is low
+-favor a specific size to make it inclusive, but runable
+
+-make it confined to a specific size
+-make it possible to see the difference from generation to generation
+-check out how java does passing, pass by reference vs pass by copy
+-comment everything
+-replace Math.random() with Random.nextInt()
+-while you're at it, change everything to use EquaitonGA.maxVal
+-consider making a new function to test if leaves (constants and variables separetely) exist, faster than testing if the number of leaves is > 0
+-same thing with powers
+
+-make binary (and unary) mutations faster by finding the parent and the operator in question at the same time, so e.setOp doesn't have to search through the entire tree
+-make a global constant for the pow maxInt
+-think about changing e.selectBranch so the prob doesn't increase as you go down the tree
+-change getPow to be more robust
+-change only int creation to double creation for final copy
+-think about how successful the sqrt in the fitness function is, and if it is worth it
+-save time by keeping a list of all of each thing, so we don't have to search through the tree every time
+
+-get leaves count is taking a long time
+
+-the most useful thing we can do is make the variables relative to teams of a certain performance
+
+-nodiv: use this to make everything faster and converge better
+
+-things to talk about:
+--tell him that my fitness function is already basically taking the absolute value of the difference
+--talk about usefulness of r^2 as a measure of accuracy, it will only fit the sample data
+---so, if the data has a lot of noise you don't want something with a high accuracy
+---so this means that in order for the accuracy to be a useful measure, the data has to be patterned in the first place
+---and for this, we need more independant variables
+----what else do you think we can use?
+--we are seeing that there is one that is very successful, but the others really suck.
+
+------------------------------------
+-NOW: check how the full simplified thing works in excel and compares to excel's 2nd order polynomial
+
+variables:
+runs, 7
+hits, 8
+batting average, 17
+
+(((44.0 - (-1101.0/(97.0*x)))/
+     58.0)*27.0) + ((49.0 - ((33.0*y)/31.0)) - y) + (-152082.0 + 
+   379.3076923076923) + (((85.0 + (x + 35.0)) - ((100.0 - y)*4.0))/
+   37.0) + (-152082.0 + (((y*100.0)/13.0) - 
+     75.0)) + (0.14460149543331297*27.0) + ((((44.0 + (-1049.0/(55.0*
+             y)))/58.0)^7)*27.0) + (((44.0 - (-1101.0/((97.0*x)^6)))/
+     58.0)*27.0) + (((42.0 - ((y*(x*(y - y)))*(x*y))) - 58.0)*
+   y) + ((((44.0 + (-1045.0/(y*64.0)))/58.0)/
+     27.0)^6) + ((0.07760049860747731 - ((100.0 - y)*4.0))/
+   71.0) + ((((44.0 - ((y + (81.0*(40.0 - y)))/2695.0))/
+       58.0)^7)*27.0) + (-101388.0 - (((y*37.0)/13.0) + 
+     75.0)) + (((42.0 - ((y*(x*(y - y)))/(x*y))) - 58.0)*
+   y) + (569850.0 - 35.388888888888886) + (6.7153867008419886 E - 
+   15^3) + (-12852.0 - 83.33333333333333) + (-152082.0 + 
+   59.45348837209303) + (-10.0/
+   1468.0) + ((15130.0 + ((35937.0*y)/31.0))/40.0)
